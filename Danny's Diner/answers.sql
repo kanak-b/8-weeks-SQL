@@ -16,4 +16,16 @@ order by s.customer_id asc
 
 --2. How many days has each customer visited the restaurant?
 
+select customer_id, count(distinct(order_date))
+from sales
+group by customer_id;
+
+-- customer_id	 count
+--    A	          4
+--    B   	      6
+--    C           2
+
+--3. What was the first item from the menu purchased by each customer?
+
+
 
